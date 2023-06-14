@@ -6,8 +6,8 @@ const Intro = () => {
         <img className="min-w-full" src="assets/img/slider/1.jpg" alt="image" />
       </div>
       <div className="about_title w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[20px] mb-[30px]">
-        <h3 className="text-[22px] font-bold">Adriano Smith</h3>
-        <span>Web Developer</span>
+        <h3 className="text-[22px] font-bold">Guanhua Ding</h3>
+        <span>Software Engineer</span>
       </div>
       <div className="about_text w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[31px] mb-[30px]">
         <p className="mb-[11px]">
@@ -29,21 +29,9 @@ const Intro = () => {
             <ul className="m-0 list-none">
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Birthday:
+                  Location:
                 </span>
-                <span>01.07.1990</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Age:
-                </span>
-                <span>32</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Address:
-                </span>
-                <span>Ave 11, New York, USA</span>
+                <span>Gold Coast / Brisbane, Australia</span>
               </li>
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
@@ -54,7 +42,7 @@ const Intro = () => {
                     className="text-[#767676] transition-all duration-300 hover:text-black"
                     href="mailto:tokyo@gmail.com"
                   >
-                    tokyo@gmail.com
+                    guanhua.ding@outlook.com
                   </a>
                 </span>
               </li>
@@ -67,52 +55,16 @@ const Intro = () => {
                     className="text-[#767676] transition-all duration-300 hover:text-black"
                     href="tel:+77 022 177 05 05"
                   >
-                    +77 022 177 05 05
+                    +61 413 969 140
                   </a>
                 </span>
               </li>
             </ul>
           </div>
         </div>
-        <div className="right w-1/2 pl-[50px]">
-          <div className="tokyo_tm_info">
-            <ul className="m-0 list-none">
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Nationality:
-                </span>
-                <span>USA</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Study:
-                </span>
-                <span>Univercity of Texas</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Degree:
-                </span>
-                <span>Master</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Interest:
-                </span>
-                <span>Playing Football</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Freelance:
-                </span>
-                <span>Available</span>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
       <div className="tokyo_tm_button" data-position="left">
-        <a href="assets/img/cv/1.jpg" download>
+        <a href="assets/file/guanhua_ding_06_2022.pdf" download>
           <span>Download CV</span>
         </a>
       </div>

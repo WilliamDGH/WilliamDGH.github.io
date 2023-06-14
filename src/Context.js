@@ -169,7 +169,8 @@ const TokyoState = ({ children }) => {
         setNewsModal,
         portfolioDetailsModal,
         setPortfolioDetailsModal,
-        toggleDarkMode, // provide isDarkMode and toggleDarkMode to context
+        toggleDarkMode,
+        isDarkMode, // provide isDarkMode and toggleDarkMode to context
       }}
     >
       {children}

@@ -3,22 +3,22 @@ const socialIcon = [
   {
     id: 1,
     iconName: "icon-github-squared",
-    link: "https://www.facebook.com/",
+    link: "https://github.com/WilliamDGH",
   },
   {
     id: 2,
-    iconName: "icon-twitter-squared",
-    link: "https://twitter.com/",
+    iconName: "icon-linkedin-squared",
+    link: "https://www.linkedin.com/in/guanhuading/",
   },
   {
     id: 3,
-    iconName: "icon-behance-squared",
-    link: "https://www.behance.net/",
+    iconName: "icon-twitter-squared",
+    link: "https://twitter.com/ding_guanhua",
   },
   {
     id: 4,
-    iconName: "icon-linkedin-squared",
-    link: "https://www.linkedin.com/",
+    iconName: "icon-steam-squared",
+    link: "https://steamcommunity.com/profiles/76561198018532264/",
   },
 ];
 const Home = () => {
