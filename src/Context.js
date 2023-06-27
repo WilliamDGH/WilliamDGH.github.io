@@ -34,9 +34,8 @@ const initialState = {
   menus: [
     { id: 1, name: "Home", href: "home" },
     { id: 2, name: "about", href: "about" },
-    { id: 3, name: "service", href: "service" },
-    { id: 4, name: "portfolio", href: "portfolio" },
-    { id: 5, name: "news", href: "news" },
+    // TODO
+    // { id: 4, name: "portfolio", href: "portfolio" },
     { id: 6, name: "contact", href: "contact" },
   ],
   isDarkMode: true, // initial value for dark mode
