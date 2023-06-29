@@ -1,12 +1,12 @@
-const programming = [
-  { id: 1, name: "WordPress", value: 95 },
-  { id: 2, name: "JavaScript", value: 80 },
-  { id: 3, name: "Angular", value: 90 },
+const languages = [
+  { id: 1, name: "JavaScript", value: 95 },
+  { id: 2, name: "TypeScript", value: 90 },
+  { id: 3, name: "PHP", value: 90 },
 ];
-const language = [
-  { id: 1, name: "English", value: 90 },
-  { id: 2, name: "Russian", value: 95 },
-  { id: 3, name: "Arabic", value: 85 },
+const frameworks = [
+  { id: 1, name: "Node.js", value: 90 },
+  { id: 2, name: "Express.js", value: 85 },
+  { id: 3, name: "Laravel", value: 95 },
 ];
 const Skills = () => {
   return (
@@ -15,10 +15,10 @@ const Skills = () => {
         <div className="in w-full h-auto clear-both float-left flex">
           <div className="left w-1/2 pr-[50px]">
             <div className="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-              <h3 className="text-[20px] font-bold">Programming Skills</h3>
+              <h3 className="text-[20px] font-bold">Programming Languages</h3>
             </div>
             <div className="tokyo_progress">
-              {programming.map((skill) => (
+              {languages.map((skill) => (
                 <div className="progress_inner" key={skill.id}>
                   <span>
                     <span className="label">{skill.name}</span>
@@ -38,10 +38,10 @@ const Skills = () => {
           </div>
           <div className="right w-1/2 pl-[50px]">
             <div className="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-              <h3 className="text-[20px] font-bold">Language Skills</h3>
+              <h3 className="text-[20px] font-bold">Frameworks</h3>
             </div>
             <div className="tokyo_progress">
-              {language.map((skill) => (
+              {frameworks.map((skill) => (
                 <div className="progress_inner" key={skill.id}>
                   <span>
                     <span className="label">{skill.name}</span>

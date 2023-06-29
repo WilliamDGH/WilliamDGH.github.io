@@ -1,41 +1,35 @@
 const experiencesData = [
   {
     id: 1,
-    date: "2018 - Now",
-    designation: "Exclusive Author",
-    company: "Envato Market",
+    date: "2021 - Present",
+    designation: "Software Enginner",
+    company: "Go1",
   },
   {
     id: 2,
-    date: "2016 - 2018",
-    designation: "UX Designer",
-    company: "RGB Studio",
+    date: "2019 - 2021",
+    designation: "Software Enginner",
+    company: "Digistorm",
   },
   {
     id: 3,
-    date: "2012 - 2016",
-    designation: "Web Designer",
-    company: "Innovations Park",
+    date: "2014 - 2018",
+    designation: "Retail Manager",
+    company: "Tommy Hilfiger",
   },
 ];
 const educationData = [
   {
     id: 1,
-    date: "2014 - 2016",
-    degree: "Master Degree",
-    institute: "Oxford Univercity",
+    date: "2018 - 2019",
+    degree: "Web Development Immersive",
+    institute: "GENERAL ASSEMBLY SYDNEY",
   },
   {
     id: 2,
-    date: "2010 - 2014",
-    degree: "Bachelor Degree",
-    institute: "Texas Univercity",
-  },
-  {
-    id: 3,
-    date: "2008 - 2010",
-    degree: "Associate Degree",
-    institute: "Simone College",
+    date: "2013 - 2014",
+    degree: "Diploma of Business",
+    institute: "QUEENSLAND UNIVERSITY OF TECHNOLOGY",
   },
 ];
 

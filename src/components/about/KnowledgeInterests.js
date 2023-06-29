@@ -1,16 +1,16 @@
-const knowledge = [
-  { id: 1, text: "Bootstrap, Angular" },
-  { id: 2, text: "React, Vue, Laravel" },
-  { id: 3, text: "Stylus, Sass, Less" },
-  { id: 4, text: "Gulp, Webpack, Grunt" },
-  { id: 5, text: "Tweenmax, GSAP" },
+const frontEnd = [
+  { id: 1, text: "React" },
+  { id: 2, text: "Vue.js" },
+  { id: 3, text: "Next.js" },
+  { id: 4, text: "HTML, CSS" },
+  { id: 5, text: "Tailwind" },
 ];
-const interests = [
-  { id: 1, text: "Make UI/UX Design" },
-  { id: 2, text: "Create Mobile App" },
-  { id: 3, text: "Site Optimization" },
-  { id: 4, text: "Custom Website" },
-  { id: 5, text: "Learn Ecommerce" },
+const databaseAndCloud = [
+  { id: 1, text: "SQL" },
+  { id: 2, text: "PostgreSQL" },
+  { id: 3, text: "Elasticsearch" },
+  { id: 4, text: "Azure" },
+  { id: 5, text: "AWS" },
 ];
 
 const KnowledgeInterests = () => {
@@ -20,11 +20,11 @@ const KnowledgeInterests = () => {
         <div className="in w-full h-auto clear-both float-left flex">
           <div className="left w-1/2 pr-[50px]">
             <div className="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-              <h3 className="text-[20px] font-bold">Knowledge</h3>
+              <h3 className="text-[20px] font-bold">Front-end Technologies</h3>
             </div>
             <div className="tokyo_tm_skill_list w-full h-auto clear-both float-left">
               <ul className="m-0 list-none">
-                {knowledge.map((item) => (
+                {frontEnd.map((item) => (
                   <li className="m-0 pl-[25px] relative" key={item.id}>
                     <span>
                       <img
@@ -41,11 +41,11 @@ const KnowledgeInterests = () => {
           </div>
           <div className="right w-1/2 pl-[50px]">
             <div className="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-              <h3 className="text-[20px] font-bold">Interests</h3>
+              <h3 className="text-[20px] font-bold">Database & Cloud Services</h3>
             </div>
             <div className="tokyo_tm_skill_list w-full h-auto clear-both float-left">
               <ul className="m-0 list-none">
-                {interests.map((item) => (
+                {databaseAndCloud.map((item) => (
                   <li className="m-0 pl-[25px] relative" key={item.id}>
                     <span>
                       <img
