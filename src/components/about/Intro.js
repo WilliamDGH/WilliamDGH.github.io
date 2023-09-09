@@ -60,7 +60,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="tokyo_tm_button" data-position="left">
-        <a href="assets/file/guanhua_ding_07_2023.pdf" download>
+        <a href="assets/file/guanhua_ding_09_2023.pdf" download>
           <span>Download CV</span>
         </a>
       </div>
