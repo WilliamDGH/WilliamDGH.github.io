@@ -15,9 +15,9 @@ const Sidebar = () => {
           {/* You can use image or text as logo. data-type values are: "image" and "text" */}
           <a href="#">
           {isDarkMode ? 
-            <Image src="assets/img/logo/guanhua-ding-logo-dark.png" alt="Logo" width={200} height={200} />
+            <Image src="/assets/img/logo/guanhua-ding-logo-dark.png" alt="Logo" width={200} height={200} />
             : 
-            <Image src="assets/img/logo/guanhua-ding-logo-light.png" alt="Logo" width={200} height={200} />
+            <Image src="/assets/img/logo/guanhua-ding-logo-light.png" alt="Logo" width={200} height={200} />
           }
 
             <h3 className="font-poppins font-black text-[31px] tracking-[5px]">
