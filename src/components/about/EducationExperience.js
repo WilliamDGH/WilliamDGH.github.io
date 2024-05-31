@@ -1,21 +1,21 @@
 const experiencesData = [
   {
     id: 1,
-    date: "2021 - Present",
+    date: "2024 - Present",
+    designation: "Software Enginner",
+    company: "Leonardo.Ai",
+  },
+  {
+    id: 2,
+    date: "2021 - 2024",
     designation: "Software Enginner",
     company: "Go1",
   },
   {
-    id: 2,
+    id: 3,
     date: "2019 - 2021",
     designation: "Software Enginner",
     company: "Digistorm",
-  },
-  {
-    id: 3,
-    date: "2014 - 2018",
-    designation: "Retail Manager",
-    company: "Tommy Hilfiger",
   },
 ];
 const educationData = [
