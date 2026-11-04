@@ -22,7 +22,7 @@ const Mobile = () => {
                 <Image src="/assets/img/logo/guanhua-ding-logo-light.png" alt="Logo" width={100} height={100} />
               }
               <h3 className="font-black font-poppins text-[25px] tracking-[4px]">
-                TOKYO
+                G. D.
               </h3>
             </a>
           </div>

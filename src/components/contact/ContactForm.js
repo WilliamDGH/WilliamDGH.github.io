@@ -8,6 +8,19 @@ const ContactForm = () => {
   });
   const { name, email, message } = mailData;
   const [error, setError] = useState(null);
+
+  const serviceId = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID;
+  const templateId = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID;
+  const publicKey = process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_API;
+
+  // Deployments without an email service configured fall back to the
+  // visitor's own mail client instead of silently dropping the message.
+  const mailtoFallback = () => {
+    const subject = encodeURIComponent(`Website enquiry from ${name}`);
+    const body = encodeURIComponent(`${message}\n\nFrom: ${name} <${email}>`);
+    window.location.href = `mailto:hi@guanhua.me?subject=${subject}&body=${body}`;
+  };
+
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   const onSubmit = (e) => {
@@ -15,13 +28,15 @@ const ContactForm = () => {
     if (name.length === 0 || email.length === 0 || message.length === 0) {
       setError(true);
       clearError();
+    } else if (!serviceId || !templateId || !publicKey) {
+      mailtoFallback();
     } else {
       emailjs
         .send(
-          process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID, // service id
-          process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID, // template id
+          serviceId, // service id
+          templateId, // template id
           mailData,
-          process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_API // public api
+          publicKey // public api
         )
         .then(
           (response) => {
@@ -30,7 +45,7 @@ const ContactForm = () => {
             setMailData({ name: "", email: "", message: "" });
           },
           (err) => {
-            console.log(err.text);
+            console.error(err.text);
           }
         );
     }
@@ -94,8 +109,14 @@ const ContactForm = () => {
         <div className="tokyo_tm_button" data-position="left">
           <button type="submit">Send Message</button>
         </div>
-        {/* If you want to change mail address to yours, please open modal.php and go to line 4 */}
       </form>
+      <p className="mt-[25px] text-[14px] text-[#767676]">
+        Prefer email? Reach me at{" "}
+        <a className="underline" href="mailto:hi@guanhua.me">
+          hi@guanhua.me
+        </a>
+        .
+      </p>
     </div>
   );
 };

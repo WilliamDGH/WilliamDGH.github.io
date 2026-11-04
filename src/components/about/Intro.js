@@ -9,14 +9,14 @@ const Intro = () => {
       </div>
       <div className="about_title w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[20px] mb-[30px]">
         <h3 className="text-[22px] font-bold">Guanhua Ding</h3>
-        <span>Software Engineer</span>
+        <span>Software Engineer · Backend (Java / TypeScript)</span>
       </div>
       <div className="about_text w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[31px] mb-[30px]">
         <p className="mb-[11px]">
-          Hi, my name is Guanhua Ding and I am a detail-oriented and driven Full Stack Software Engineer with over {yearsOfExperience} years of experience in designing,
-          developing, and implementing applications and solutions utilizing a broad range of technologies and languages such as JavaScript, Node.js, PHP, SQL, and others.
-          Proficient in front-end development using React, Vue.js, and Next.js, and skilled in database management with SQL and Elasticsearch.
-          Experienced with cloud services like Azure and AWS. Committed to building scalable and efficient software solutions that drive business success.
+          Hi, my name is Guanhua Ding and I am a detail-oriented backend software engineer with over {yearsOfExperience} years of experience building
+          production APIs, event-driven architectures, and distributed services. Across Leonardo.Ai and Canva I have shipped end-to-end generative-AI
+          pipelines, cross-platform SSO authentication, and enterprise admin backends using Java and TypeScript/Node.js. I work AI-first, pairing coding
+          agents with strict specification design, automated testing, and code review.
         </p>
       </div>
       <div className="tokyo_tm_short_info w-full h-auto clear-both float-left flex border-solid border-[#DFDFDF] border-b pb-[30px] mb-[40px]">
@@ -36,9 +36,9 @@ const Intro = () => {
                 <span>
                   <a
                     className="text-[#767676] transition-all duration-300 hover:text-black"
-                    href="mailto:guanhua.ding@outlook.com"
+                    href="mailto:hi@guanhua.me"
                   >
-                    guanhua.ding@outlook.com
+                    hi@guanhua.me
                   </a>
                 </span>
               </li>
@@ -49,9 +49,9 @@ const Intro = () => {
                 <span>
                   <a
                     className="text-[#767676] transition-all duration-300 hover:text-black"
-                    href="tel:+61 413 969 140"
+                    href="tel:+61413969140"
                   >
-                    +61 413 969 140
+                    0413 969 140
                   </a>
                 </span>
               </li>

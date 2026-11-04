@@ -1,12 +1,15 @@
 const languages = [
-  { id: 1, name: "JavaScript", value: 95 },
-  { id: 2, name: "TypeScript", value: 90 },
-  { id: 3, name: "PHP", value: 90 },
+  { id: 1, name: "TypeScript", value: 95 },
+  { id: 2, name: "JavaScript", value: 95 },
+  { id: 3, name: "Java", value: 85 },
+  { id: 4, name: "SQL", value: 85 },
+  { id: 5, name: "PHP", value: 80 },
 ];
 const frameworks = [
-  { id: 1, name: "Node.js", value: 90 },
-  { id: 2, name: "Express.js", value: 85 },
-  { id: 3, name: "Laravel", value: 95 },
+  { id: 1, name: "Node.js / Nest.js", value: 92 },
+  { id: 2, name: "Spring Boot", value: 85 },
+  { id: 3, name: "React / Next.js", value: 90 },
+  { id: 4, name: "GraphQL (Hasura)", value: 80 },
 ];
 const Skills = () => {
   return (

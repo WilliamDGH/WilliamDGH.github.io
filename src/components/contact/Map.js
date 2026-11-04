@@ -13,15 +13,12 @@ const Map = () => {
             marginHeight={0}
             marginWidth={0}
           />
-          <a href="https://fmovies-online.net">fmovies</a>
-          <br />
           <style
             dangerouslySetInnerHTML={{
               __html:
                 ".mapouter{position:relative;text-align:right;height:355px;width:100%;}",
             }}
           />
-          <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
           <style
             dangerouslySetInnerHTML={{
               __html:
@@ -30,7 +27,6 @@ const Map = () => {
           />
         </div>
       </div>
-      {/* Get your API here https://www.embedgooglemap.net */}
     </div>
   );
 };
