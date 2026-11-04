@@ -36,7 +36,7 @@ const Intro = () => {
                 <span>
                   <a
                     className="text-[#767676] transition-all duration-300 hover:text-black"
-                    href="mailto:tokyo@gmail.com"
+                    href="mailto:guanhua.ding@outlook.com"
                   >
                     guanhua.ding@outlook.com
                   </a>
@@ -60,7 +60,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="tokyo_tm_button" data-position="left">
-        <a href="assets/file/guanhua_ding_05_2024.pdf" download>
+        <a href="assets/file/guanhua_ding_11_2026.pdf" download>
           <span>Download CV</span>
         </a>
       </div>
