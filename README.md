@@ -1,15 +1,14 @@
 ## Guanhua Ding — personal site
 
 My portfolio and CV site, built with [Next.js](https://nextjs.org/) and exported as
-static files, then published to GitHub Pages by the workflow in
-`.github/workflows/publish.yml`.
+static files, then published to Cloudflare Pages.
 
 ### Stack
 
 - Next.js 13 (Pages Router) with React 18 and Tailwind-style utility classes
 - `emailjs-com` for the contact form, with a `mailto:` fallback when no email
   service is configured at build time
-- Static export (`next build && next export`) served from GitHub Pages
+- Static export (`next build && next export`) served from Cloudflare Pages
 
 ### Local development
 
@@ -39,6 +38,16 @@ NEXT_PUBLIC_EMAIL_JS_PUBLIC_API=
 
 ### Deployment
 
-Pushing to `main` triggers the Pages workflow: it builds the static export and
-uploads `./out` as the Pages artifact. The CV PDF lives in
-`public/assets/file/`; reference it from `src/components/about/Intro.js`.
+Production is a **Cloudflare Pages** project connected to this GitHub repository.
+Every push to `main` runs `npm run build` (`next build && next export`) and
+publishes the `out` directory; every pull request gets a preview deployment.
+There is no GitHub Actions workflow in this repo — the pipeline lives entirely in
+the Cloudflare dashboard, so the only values it needs are:
+
+| Setting | Value |
+| --- | --- |
+| Build command | `npm run build` |
+| Build output directory | `out` |
+
+The CV PDF lives in `public/assets/file/`; reference it from
+`src/components/about/Intro.js`.

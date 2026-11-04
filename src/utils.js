@@ -128,30 +128,4 @@ export const tokyo = {
             }
         }
     },
-    portfolioHover() {
-        const tokyo_tm_portfolio_animation_wrap = document.querySelectorAll(
-                ".tokyo_tm_portfolio_animation_wrap"
-            ),
-            tokyo_tm_portfolio_titles = document.querySelector(
-                ".tokyo_tm_portfolio_titles"
-            );
-        tokyo_tm_portfolio_animation_wrap.forEach((element) => {
-            element.addEventListener("mousemove", () => {
-                let title = element.getAttribute("data-title"),
-                    category = element.getAttribute("data-category");
-                if (title) {
-                    tokyo_tm_portfolio_titles.classList.add("visible");
-                    tokyo_tm_portfolio_titles.innerHTML =
-                        title + '<span class="work__cat">' + category + "</span>";
-                }
-                document.addEventListener("mousemove", (e) => {
-                    tokyo_tm_portfolio_titles.style.left = `${e.clientX - 10}px`;
-                    tokyo_tm_portfolio_titles.style.top = `${e.clientY + 25}px`;
-                });
-            });
-            element.addEventListener("mouseleave", () => {
-                tokyo_tm_portfolio_titles.classList.remove("visible");
-            });
-        });
-    },
 };
