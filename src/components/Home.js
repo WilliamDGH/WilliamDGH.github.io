@@ -43,7 +43,8 @@ const Home = () => {
                 Guanhua <span>Ding</span>
               </h3>
               <p className="job font-montserrat font-medium max-w-[450px] mb-[25px]">
-                I am a Software Engineer based in Gold Coast, Australia.
+                I am a Backend Software Engineer based in Gold Coast, Australia, building
+                production APIs and event-driven services in Java and TypeScript.
               </p>
               <div className="social w-full float-left">
                 <ul className="m-0 list-none">
